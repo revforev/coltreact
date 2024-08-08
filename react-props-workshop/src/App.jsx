@@ -1,30 +1,21 @@
-import {useState} from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
+import ListPicker from './ListPicker.jsx';
+import DoubleDice from './DoubleDice.jsx';
+import Heading from './Heading.jsx';
+import ColorList from './ColorList.jsx';
+import SlotMachine from './SlotMachine.jsx';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Hello! Testing!</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
+    <div>
+      {/* <Heading color="Orange" text="Welcome!" fontSize="20px"></Heading>
+      <Heading color="teal" text="Welcome!" fontSize="48px"></Heading>
+      <DoubleDice></DoubleDice>
+      <DoubleDice></DoubleDice>
+      <ColorList colors={['red', 'pink', 'purple', 'teal']}></ColorList>
+      <ColorList colors={['yellow', 'olive', 'orangered', 'black']}></ColorList> */}
+      <SlotMachine val1="🍒" val2="🍒" val3="🍒"></SlotMachine>
+    </div>
   );
 }
 
